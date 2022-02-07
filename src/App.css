@@ -1,0 +1,15 @@
+body {
+    background-color: rgb(221, 168, 168);
+}
+
+.gifs {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gif {
+    padding: 0 2px;
+}
