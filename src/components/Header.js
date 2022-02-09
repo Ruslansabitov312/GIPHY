@@ -1,15 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import './header.css'
 
 const Header = () => {
   return (
-    <>
-      <nav>
-        <Link to='/'>Home</Link>
-        <Link to='/trending'>Trending</Link>
-        <Link to='/random'>Random</Link>
+    <div className='header'>
+      <nav className='nav'>
+        <h1 className='brand'>GIPHY</h1>
+        <Link className='random' to='/random'>RANDOM</Link>
       </nav>
-    </>
+    </div>
   )
 }
 

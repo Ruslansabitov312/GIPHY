@@ -1,6 +1,10 @@
 import { GET_GIPHY } from '../constants/getGiphy'
 
-export const getGyphyReducer = (state = { data: [] }, action) => {
+const defaultState = {
+  data: []
+}
+
+export const getGyphyReducer = (state = defaultState, action) => {
   switch (action.type) {
     case GET_GIPHY:
       return { data: action.payload.data }

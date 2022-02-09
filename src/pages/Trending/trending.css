@@ -1,0 +1,14 @@
+.trending {
+    width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    column-gap: 10px;
+    row-gap: 10px;
+    margin: 10px auto;
+  }
+  
+  .trending-img {
+    width: 400px;
+    height: 250px;
+    border-radius: 5px;
+  }

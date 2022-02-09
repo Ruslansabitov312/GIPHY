@@ -1,0 +1,1 @@
+export const GET_RANDOM_GIPHY = 'GET_RANDOM_GIPHY'

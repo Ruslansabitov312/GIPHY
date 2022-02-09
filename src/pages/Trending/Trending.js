@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { getGiphy } from '../redux/actions/getGiphyAction'
+import { getGiphy } from '../../redux/actions/getGiphyAction'
+import './trending.css'
 
 const Giphy = () => {
   const dispatch = useDispatch()
@@ -13,11 +14,11 @@ const Giphy = () => {
   }, [dispatch])
 
   return (
-    <div className='container gifs'>
+    <div className='trending'>
       {data.map((el) => {
         return (
           <div key={el.id} className='gif'>
-            <img src={el.images.fixed_height.url} />
+            <img className='trending-img' src={el.images.fixed_height.url} />
           </div>
         )
       })}

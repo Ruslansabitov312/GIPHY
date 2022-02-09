@@ -1,15 +1,4 @@
 body {
-    background-color: rgb(221, 168, 168);
-}
-
-.gifs {
-    margin: 0 auto;
-    width: 80%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.gif {
-    padding: 0 2px;
+    background: rgb(97,52,93);
+    background: linear-gradient(90deg, rgba(97,52,93,1) 20%, rgba(97,52,93,1) 42%, rgba(97,52,93,1) 58%, rgba(56,10,52,1) 77%);
 }

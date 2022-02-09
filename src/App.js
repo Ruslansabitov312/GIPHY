@@ -1,21 +1,19 @@
 import React from 'react'
 import Header from './components/Header'
-import Home from './pages/Home'
-import Trending from './pages/Trending'
-import Random from './pages/Random'
+import Trending from './pages//Trending/Trending'
+import Random from './pages//Random/Random'
 import './App.css'
 import { Routes, Route } from 'react-router-dom'
 
 const App = () => {
   return (
-    <>
+    <div className='App'>
       <Header />
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/trending' element={<Trending />} />
+        <Route path='/' element={<Trending />} />
         <Route path='/random' element={<Random />} />
       </Routes>
-    </>
+    </div>
   )
 }
 
