@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from './components/Header'
+import Header from './components/Header/Header'
 import Trending from './pages//Trending/Trending'
 import Random from './pages//Random/Random'
 import './App.css'

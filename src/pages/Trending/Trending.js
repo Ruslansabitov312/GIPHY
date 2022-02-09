@@ -6,7 +6,6 @@ import './trending.css'
 const Giphy = () => {
   const dispatch = useDispatch()
   const data = useSelector((state) => state.giphy.data)
-
   console.log(data)
 
   useEffect(async () => {
@@ -17,7 +16,7 @@ const Giphy = () => {
     <div className='trending'>
       {data.map((el) => {
         return (
-          <div key={el.id} className='gif'>
+          <div key={el.id}>
             <img className='trending-img' src={el.images.fixed_height.url} />
           </div>
         )
