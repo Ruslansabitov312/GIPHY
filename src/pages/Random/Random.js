@@ -1,7 +1,23 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import { getRandomGiphy } from '../../redux/actions/getRandomGiphyAction'
+import './random.css'
 
-const Random = () => {
-  return <div>Random</div>
+const RandomGiphy = () => {
+  const dispatch = useDispatch()
+  const data = useSelector((state) => state.randomGiphy.data)
+
+  console.log(data)
+
+  useEffect(async () => {
+    await dispatch(getRandomGiphy())
+  }, [])
+
+  return (
+    <div className='random'>
+      <img className='random-img' src={data.images?.downsized.url} alt='gif' />
+    </div>
+  )
 }
 
-export default Random
+export default RandomGiphy

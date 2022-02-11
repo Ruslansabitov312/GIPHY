@@ -6,8 +6,8 @@ import { composeWithDevTools } from 'redux-devtools-extension'
 import thunk from 'redux-thunk'
 
 const rootReducer = combineReducers({
-  giphy: getGyphyReducer,
-  randomGiphy: getRandomGiphyReducer,
+  giphy       : getGyphyReducer,
+  randomGiphy : getRandomGiphyReducer,
 })
 
 export const store = createStore(

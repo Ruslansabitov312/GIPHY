@@ -1,0 +1,8 @@
+.random {display: grid;}
+.random-img {
+  width: 700px;
+  height: 600px;
+  margin-top: 1rem;
+  justify-self: center;
+  border-radius: 15px;
+  }

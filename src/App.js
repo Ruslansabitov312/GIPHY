@@ -10,8 +10,9 @@ const App = () => {
     <div className='App'>
       <Header />
       <Routes>
-        <Route path='/' element={<Trending />} />
-        <Route path='/random' element={<Random />} />
+        <Route path='/'         element={<Trending />} />
+        <Route path='/trending' element={<Trending />} />
+        <Route path='/random'   element={<Random />} />
       </Routes>
     </div>
   )
