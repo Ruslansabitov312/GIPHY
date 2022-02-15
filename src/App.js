@@ -2,7 +2,7 @@ import React from 'react'
 import Header from './components/Header/Header'
 import Trending from './pages//Trending/Trending'
 import Random from './pages//Random/Random'
-import './App.css'
+import './styles/App.css'
 import { Routes, Route } from 'react-router-dom'
 
 const App = () => {

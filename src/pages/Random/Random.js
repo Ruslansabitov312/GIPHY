@@ -9,9 +9,9 @@ const RandomGiphy = () => {
 
   console.log(data)
 
-  useEffect(async () => {
-    await dispatch(getRandomGiphy())
-  }, [])
+  useEffect(() => {
+    dispatch(getRandomGiphy())
+  }, [dispatch])
 
   return (
     <div className='random'>

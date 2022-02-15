@@ -8,8 +8,8 @@ const Giphy = () => {
   const data = useSelector((state) => state.giphy.data)
   console.log(data)
 
-  useEffect(async () => {
-    await dispatch(getGiphy())
+  useEffect(() => {
+    dispatch(getGiphy())
   }, [dispatch])
 
   return (
