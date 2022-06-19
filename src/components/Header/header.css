@@ -19,8 +19,9 @@
 
 .header-trending {
     color: white;
-    background-color: rgb(91, 115, 221);
-    border: 1px solid rgb(200, 182, 182);
+    background: linear-gradient(103deg, #6157FF, #7067ff, #6157FF);
+    border: none;
+    border-radius: 5px;
     margin-left: 15px;
     padding: 5px 20px;
     text-align: center;
@@ -29,8 +30,8 @@
 
 .header-random {
     color: white;
-    background-color: rgb(91, 115, 221);
-    border: 1px solid rgb(200, 182, 182);
+    background: linear-gradient(103deg, #6157FF, #7067ff, #6157FF);
+    border-radius: 5px;
     margin-left: 15px;
     padding: 5px 20px;
     text-align: center;
